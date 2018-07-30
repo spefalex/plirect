@@ -10,6 +10,21 @@ body, .box > *, textarea, input {
 	overflow: hidden;
 }
 
+
+/* inscription */
+
+.inscription .panel-default{
+	margin-left: 60%;
+	width: 20%;
+	min-width:300px;
+}
+
+#accord , #accord:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
 /* ----------------------------
 	STRUCTURE
 ---------------------------- */
@@ -34,17 +49,14 @@ a{
 	margin-bottom: 12%;
 }
 h5{
-	padding-top: 25px;
+	padding-bottom: 5px;
 	text-align: center;
-	color: #969694;
+	color:#969694 !important;
 }
 
 .glyphicon {
     font-size: 12px;
 		color: #396c7f;
-}
-input{
-	vertical-align: middle;
 }
 
 #labcheck{
@@ -79,6 +91,35 @@ span{
 }
 .glyphicon{
 	display: block;
+}
+/* button code parrain */
+#code{
+	height: 25px;
+	background: #00405b;
+	border:none;
+}
+#creer{
+	margin-top: 60%;
+	height:30px;
+	background: #00405b;
+	border:none;
+}
+
+#rot {
+	 color: #fff;
+	 text-shadow: 1px 1px 1px red;
+	 font-size: 3em;
+}
+
+#top{
+	padding: 5px;
+	text-align: center;
+	border-top: 1px #969694 solid;
+	color: inherit;
+
+}
+.inscription .row{
+	padding-left: 28px;
 }
 
 #log{
@@ -214,6 +255,10 @@ body {
 /* ----------------------------
 	FORMULAIRE
 ---------------------------- */
+
+form{
+	margin-top: 0px;
+}
 
 .form {
 	align-self: flex-end;

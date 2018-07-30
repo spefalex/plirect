@@ -23,9 +23,9 @@ return (
 <div className="container">
 <div className="row">
 <div className="panel panel-default col-sm-6 col-md-4 col-md-offset-4">
-<h5 id="con">Connectez vous pour accéder à votre contenu</h5>
   <div className="panel-body">
     <form  noValidate>
+    <h5>Connectez vous pour accéder à votre contenu</h5>
       <div className="form-group  has-feedback">
         <input placeholder="Email"
           className="form-control"
