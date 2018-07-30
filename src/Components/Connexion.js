@@ -33,7 +33,7 @@ return (
          <span><i class="glyphicon glyphicon-envelope form-control-feedback"></i></span>
       </div>
       <div className="form-group has-feedback">
-        <input placeholder="Password"
+        <input placeholder="Mot de passe"
           type="password"
           className="form-control"
          />

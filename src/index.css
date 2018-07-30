@@ -19,10 +19,14 @@ html {
 	width:100%;
 	margin: 0;
 }
+a{
+	color: #00AEEF;
+}
 #root{
 	position: absolute;
 	background: #00425a;
 	width:100%;
+	overflow: scroll;
 	height: 100%;
 }
 .container{
@@ -49,6 +53,10 @@ input{
 	position: relative;
 	top:3px;
 
+}
+
+.inscription{
+	margin-top: 5%;
 }
 
 #con{
