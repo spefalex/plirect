@@ -54,6 +54,40 @@ h5{
 	color:#969694 !important;
 }
 
+
+/* recherche input */
+#search{
+	border: none;
+	background: transparent;
+	color:white;
+	border-bottom: 1px white solid;
+}
+.jumbotron{
+	background: #00AEEF !important;
+
+}
+.navbar{
+	border-radius:0px;
+	width:30%;
+	min-width: 450px;
+	height:150px;
+}
+.navbar a{
+	padding: 0;
+	margin: 5px;
+	color: white;
+}
+
+.navbar button{
+	background: transparent;
+	border:none;
+}
+.navbar .glyphicon{
+	color: white;
+}
+.navbar ::placeholder{
+	color: white;
+}
 .glyphicon {
     font-size: 12px;
 		color: #396c7f;
@@ -284,7 +318,7 @@ textarea {
 	padding-right: 5px;
 }
 
-button {
+.container button {
 	font-size: 20px;
 	border: none;
 	color: white;
