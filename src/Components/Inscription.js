@@ -13,7 +13,7 @@ render(){
         <div className="panel-body">
           <form  noValidate>
             <h5>Créez votre compte</h5>
-            <Input className="has-feedback" placeholder="Email" inputform="form-control" iconClass="glyphicon glyphicon-envelope form-control-feedback"/>
+            <Input className="has-feedback" placeholder="Email" inputform="form-control" iconClass="envelope form-control-feedback"/>
             <div className="form-group  has-feedback">
               <input placeholder="Nom"
                 className="form-control"

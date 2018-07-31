@@ -7,7 +7,7 @@ export default class Input extends React.Component{
         <input placeholder={this.props.placeholder}
           className={this.props.inputform}
          />
-         <span><i className={this.props.iconClass}></i></span>
+         <span><i className={'glyphicon glyphicon-'+this.props.iconClass}></i></span>
       </div>
     );
   }
