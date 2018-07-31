@@ -15,12 +15,17 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <Router history={browserHistory}>
-                <Route path="/" component={Connexion}/>
-                <Route path="/acceuil" component={Application}/>
-                <Route path="/inscription" component={Inscription}/>
-                <Route path="/blog" component={Blog}/>
-            </Router>
+
+
+
+        <Router history={browserHistory}>
+        <Route path="/" component={Connexion}/>
+        <Route path="/acceuil" component={Application}/>
+        <Route path="/inscription" component={Inscription}/>
+        <Route path="/cours" component={Cours}/>
+
+
+             </Router>
             </div>
 
         );
