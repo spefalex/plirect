@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Button from './SUBCOMPONENTS/Button';
+import Input from './SUBCOMPONENTS/Input';
+
 export default class Inscription extends React.Component{
 
 render(){
@@ -10,12 +13,7 @@ render(){
         <div className="panel-body">
           <form  noValidate>
             <h5>Créez votre compte</h5>
-            <div className="form-group  has-feedback">
-              <input placeholder="Email"
-                className="form-control"
-               />
-               <span><i class="glyphicon glyphicon-envelope form-control-feedback"></i></span>
-            </div>
+            <Input className="has-feedback" placeholder="Email" inputform="form-control" iconClass="glyphicon glyphicon-envelope form-control-feedback"/>
             <div className="form-group  has-feedback">
               <input placeholder="Nom"
                 className="form-control"
@@ -211,9 +209,8 @@ render(){
 
                     </div>
                     <div className="col">
-                    <button id="creer" type="submit" className="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                      Créer un compte
-                    </button>
+                    <Button id="creer" btncontent="Créer Compte" type="submit" className="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"/>
+
                     </div>
                     </div>
                     </div>
