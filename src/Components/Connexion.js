@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router'
 import Input from './SUBCOMPONENTS/Input';
 import Checkbox from './SUBCOMPONENTS/Checkbox';
 export default class Connexion extends React.Component {
@@ -46,6 +46,7 @@ return (
       </div>
       </div>
       </div>
+      <Link to={`/userForm`}><h1>test route</h1></Link>
     </form>
   </div>
 </div>

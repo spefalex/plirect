@@ -15,7 +15,7 @@ export default (
  <div>
 
 <Route exact path="/" component={Connexion} />
-<Route path="/about" component={UserForm} />
+<Route path="/userForm" component={UserForm} />
 
 </div>
 );
