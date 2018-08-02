@@ -12,9 +12,10 @@ import App from './App';
 
 
 export default (
-  <Route path="/" component={UserForm}>
-    <IndexRoute component={App}></IndexRoute>
-    <Route path="/inscription" component={UserForm}></Route>
-   
-  </Route>
+ <div>
+
+<Route exact path="/" component={Connexion} />
+<Route path="/about" component={UserForm} />
+
+</div>
 );
