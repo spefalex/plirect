@@ -1,33 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+// ./src/component/App.js
+import React from 'react';
+import { Link } from 'react-router';
+import { Navbar,Nav,NavItem,MenuItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+
 import './App.css';
 
-import Formulaire from './Components/Formulaire';
-import Connexion from './Components/Connexion';
-import Application from './Components/Application';
-import Inscription from './Components/Inscription';
-import Blog from './Components/Blog';
-import Cours from './Components/Cours';
-
-import {Router, Route, browserHistory, Link} from 'react-router';
-export default class App extends Component {
-
-    render() {
-        return (
-            <div>
-
-
-
-        <Router history={browserHistory}>
-        <Route path="/" component={Connexion}/>
-        <Route path="/acceuil" component={Application}/>
-        <Route path="/inscription" component={Inscription}/>
-        <Route path="/cours" component={Cours}/>
-
-
-             </Router>
-            </div>
-
-        );
-    }
+export default class App extends React.Component {
+  constructor(props){
+    super(props);
+ 
+   
+  }
+ 
+  render(){
+    return (
+      <div>
+      <Navbar inverse  collapseOnSelect className="customNav">
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">BookLibrary</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <LinkContainer to="/inscription">
+           <NavItem eventKey={1}>Inscription</NavItem>
+        </LinkContainer>
+        <LinkContainer to="/insert" >
+           <NavItem eventKey={2}>Test</NavItem>
+        </LinkContainer>
+        <LinkContainer to="/users">
+           <NavItem eventKey={3}>INSERT USER</NavItem>
+        </LinkContainer>
+      </Nav>
+  
+    </Navbar.Collapse>
+  </Navbar>
+  
+ </div>
+    );
+  }
 }
+
+
+
