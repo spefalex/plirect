@@ -1,6 +1,7 @@
 import React from 'react';
 
-
+import Input from './SUBCOMPONENTS/Input';
+import Checkbox from './SUBCOMPONENTS/Checkbox';
 export default class Connexion extends React.Component {
 
 goAcceuil = event => {
@@ -25,27 +26,11 @@ return (
   <div className="panel-body">
     <form  noValidate>
     <h5>Connectez vous pour accéder à votre contenu</h5>
-      <div className="form-group  has-feedback">
-        <input placeholder="Email"
-          className="form-control"
-         />
-         <span><i class="glyphicon glyphicon-envelope form-control-feedback"></i></span>
-      </div>
-      <div className="form-group has-feedback">
-        <input placeholder="Mot de passe"
-          type="password"
-          className="form-control"
-         />
-         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
+      <Input typeForm="text" placeholder="Email" iconClass="envelope"/>
+      <Input typeForm="text" placeholder="Mot de passe" iconClass="lock"/>
       <div class="row row-action">
       <div className="col-sm">
-          <div class="checkbox  bolo">
-                <input type="checkbox" class="form-check-input" id="souv" value=""/>
-                <label id="labcheck" for="souv">
-                Se souvenir de moi
-                </label>
-            </div>
+        <Checkbox checkID="souv">Se souvenir de moi</Checkbox>
       <a href="#">Mot de passe oublié?</a>
       </div>
       <div className="col-sm">

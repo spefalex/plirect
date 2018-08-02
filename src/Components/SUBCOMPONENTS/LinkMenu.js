@@ -6,9 +6,13 @@ export default class LinkMenu extends React.Component{
     return(
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">A PROPOS <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href={this.props.href}>{this.props.menuItem}<span class="sr-only">(current)</span></a>
         </li>
       </ul>
     );
   }
 }
+
+LinkMenu.defaultProps ={
+  href : '#'
+};

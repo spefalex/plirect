@@ -23,6 +23,7 @@ export default class App extends Component {
         <Route path="/acceuil" component={Application}/>
         <Route path="/inscription" component={Inscription}/>
         <Route path="/cours" component={Cours}/>
+        <Route path="blog" component={Blog}/>
 
 
              </Router>
