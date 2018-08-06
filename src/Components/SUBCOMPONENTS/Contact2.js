@@ -6,7 +6,7 @@ import Button from './Button';
 export default class Contact2 extends React.Component{
     render(){
         return(
-            <div className="col-sm-2">
+            <div className="col-sm-2 contact2">
               <h2>PREPA POUR</h2><h1>TOUS</h1>
             <div className="row">
                 <div className="col blogearphone">

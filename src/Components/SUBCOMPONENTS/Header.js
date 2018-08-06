@@ -22,7 +22,7 @@ export default class Header extends React.Component{
            <Recherche id="search" placeholder="Votre recherche ici..." />
      	</div>
        <div class="collapse navbar-collapse" id="navbar">
-        <LinkMenu menuItem="A PROPOS"/>
+        <LinkMenu routeLink="Apropos"  menuItem="A PROPOS"/>
         <LinkMenu menuItem="PREPA ET APPUI"/>
         <LinkMenu menuItem="METHODE"/>
         <LinkMenu menuItem="NOS PACKS"/>

@@ -7,7 +7,7 @@ import Footer from './SUBCOMPONENTS/Footer';
 import Header from './SUBCOMPONENTS/Header';
 import Contact from './SUBCOMPONENTS/Contact';
 
-export default class extends React.Component{
+export default class Blog extends React.Component{
   render(){
     return (
       <div>

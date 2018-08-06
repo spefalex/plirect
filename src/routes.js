@@ -9,6 +9,8 @@ import Blog from './Components/Blog';
 import Cours from './Components/Cours';
 import UserForm from './Components/UserForm';
 import App from './App';
+import Apropos from './Components/Apropos';
+import Telecharge from './Components/Telecharge';
 
 
 export default (
@@ -18,5 +20,7 @@ export default (
 <Route path="/userForm" component={UserForm} />
 <Route path="/Inscription" component={Inscription} />
 <Route path="/Blog" component={Blog}/>
+<Route path="/Apropos" component={Apropos}/>
+<Route path="/Telecharge" component={Telecharge}/>
 </div>
 );

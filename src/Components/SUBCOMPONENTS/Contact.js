@@ -28,7 +28,7 @@ export default class Contact extends React.Component   {
                   <Paragraph paraphCtn="Pour toutes informations supplémentaires concernant nos formations n'hésiter pas"/>
                 </div>
                 <div className="row">
-                <Button className="fa fa-download" idButton="telecharger" btncontent="Télécharger notre brochure" typeButton="submit"/>
+                <Button redirect="/Telecharge" className="fa fa-download" idButton="telecharger" btncontent="Télécharger notre brochure" typeButton="submit"/>
                 </div>
             </div>
         </div>
