@@ -25,9 +25,9 @@ export default class Header extends React.Component{
         <LinkMenu routeLink="Apropos"  menuItem="A PROPOS"/>
         <LinkMenu menuItem="PREPA ET APPUI"/>
         <LinkMenu menuItem="METHODE"/>
-        <LinkMenu menuItem="NOS PACKS"/>
+        <LinkMenu routeLink="Pack" menuItem="NOS PACKS"/>
         <LinkMenu menuItem="ACTUALITES"/>
-        <LinkMenu menuItem="CONTACT"/>
+        <LinkMenu routeLink="Contact" menuItem="CONTACT"/>
        </div>
        </nav>
        </div>

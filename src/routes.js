@@ -11,6 +11,8 @@ import UserForm from './Components/UserForm';
 import App from './App';
 import Apropos from './Components/Apropos';
 import Telecharge from './Components/Telecharge';
+import Offre from './Components/Offre';
+import Pack from './Components/Pack';
 
 
 export default (
@@ -21,6 +23,8 @@ export default (
 <Route path="/Inscription" component={Inscription} />
 <Route path="/Blog" component={Blog}/>
 <Route path="/Apropos" component={Apropos}/>
-<Route path="/Telecharge" component={Telecharge}/>
+<Route path="/Contact" component={Telecharge}/>
+<Route path="/Offre" component={Offre}/>
+<Route path="/Pack" component={Pack}/>
 </div>
 );

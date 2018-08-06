@@ -3,7 +3,7 @@ import React from 'react';
 import Contact from './Contact';
 import Content from './ContentBlog';
 import Button from './Button';
-import Offre from './Offre';
+import Offre from './Offrons';
 
 export default class ContentApropos extends React.Component{
     render(){

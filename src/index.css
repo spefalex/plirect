@@ -617,3 +617,38 @@ button:disabled {
 	margin-right: 10%;
 	
 }
+#ctnblog{
+	padding-top: 5%;
+}
+
+.color1{
+	background-color: #ccd9df;
+}
+.color1, .color2{
+	padding: 2px 0 2px 5px;
+}
+.color2{
+	background-color:#a0cbdc;
+}
+.service{
+	border-collapse: separate;
+	width: 100%;
+	border-spacing: 4px;
+	font-size: 12px;
+}
+
+.service td{
+	display: flex;
+}
+
+.service .glyphicon{
+	color: white !important;
+	border-radius:50px;
+	background: #00405b;
+	padding: 1%;
+
+}
+
+.a{
+	width:90%;
+}

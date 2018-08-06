@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default class Offre extends React.Component{
+export default class Offrons extends React.Component{
     render(){
         return(
         <div className="row" className="offre">
