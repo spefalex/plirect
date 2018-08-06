@@ -20,6 +20,7 @@ export default class Apropos extends React.Component{
               <div className="col-lg right"></div>
             </div>
             <div id="line"></div>
+            
                 </div>
                 <Footer/>
             </div>
