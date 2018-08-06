@@ -1,65 +1,42 @@
 import React from 'react';
 
-import Glyphicon from './SUBCOMPONENTS/Glyphicon';
-
+import Recherche from './SUBCOMPONENTS/Recherche';
+import Paragraph from './SUBCOMPONENTS/Paragraph';
+import ContentBlog from './SUBCOMPONENTS/ContentBlog';
+import Footer from './SUBCOMPONENTS/Footer';
+import Header from './SUBCOMPONENTS/Header';
+import Contact from './SUBCOMPONENTS/Contact';
 
 export default class extends React.Component{
   render(){
     return (
-      <div class="jumbotron">
-        <div className="row">
-        <div className="col-sm">
-       <h1>PREPA POUR</h1><h1>TOUS</h1>
-       </div>
-       <div className="col">
-       <nav className="navbar">
-       <div class="row">
-           <input type="text" id="search" placeholder="Votre recherche ici ..."/>
-           <button>
-           <span><i class="glyphicon glyphicon-search"></i></span>
-           </button>
-     	</div>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">A PROPOS <span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">PREPA ET APPUI<span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">METHODE <span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">NOS PACKS <span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">ACTUALITES <span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-         <ul class="navbar-nav">
-           <li class="nav-item active">
-             <a class="nav-link" href="#">CONTACT <span class="sr-only">(current)</span></a>
-           </li>
-         </ul>
-       </div>
-       </nav>
-       </div>
-       <div className="col">
-            <Glyphicon className="glyphicon glyphicon-user" link="#" linkname="Espace parent"/>
-            <Glyphicon className="glyphicon glyphicon-user" link="#" linkname="Espace parent"/>
-            <Glyphicon className="glyphicon glyphicon-user" link="#" linkname="S'inscrire"/>
-       </div>
-       </div>
-     </div>
+      <div>
+      <Header/>
+     <div className="row" id="ctnblog">
+            <div className="row">
+                <div id="actu" className="col-lg">
+                  <h1>Actualité</h1>
+                  <Paragraph classP="cntparaph" paraphCtn="Using empty <p> elements to increase the space between paragraphs of text is problematic for people who navigate with the aid of screen reading technology.  Screen readers may announce the presence of the element, but not any content contained within it. This can be a confusing and frustrating experience for the person using the screen reader."/>
+                  <Paragraph classP="cntparaph" paraphCtn="Using empty <p> elements to increase the space between paragraphs of text is problematic for people who navigate with the aid of screen reading technology.  Screen readers may announce the presence of the element, but not any content contained within it. This can be a confusing and frustrating experience for the person using the screen reader."/>
+                </div>
+                <div className="col-sm-2">
+                    <Recherche placeholder="Rechercher un article"/>
+                    <ContentBlog cntID="categorie" cntTitle="CATEGORIE"/>
+                    <ContentBlog cntID="motCle" cntTitle="MOTS CLES"/>
+                </div>
+            </div>
+            <div className="row contactBody">
+              <div className="col-sm left"></div>
+              <div className="col-auto">
+            <Contact/>
+              </div>
+              <div className="col-lg right"></div>
+            </div>
+            <div id="line"></div>
+    </div>
+    
+    <Footer/>
+    </div>
     );
   }
 }

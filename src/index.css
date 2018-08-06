@@ -9,8 +9,177 @@ body, .box > *, textarea, input {
 	color: #1d1d1d;
 	overflow: hidden;
 }
+/* button value */
+button{
+	font-size:auto;
+}
+/* header */
+#header{
+	background: #00AEEF;
+}
+#header li{
+	list-style: none;
+	text-decoration: none;
+}
+
+#headerRight{
+	margin-bottom:30px;
+}
+#header #espace .glyphicon, #contentBlog .glyphicon{
+	font-size: 15px;
+	color:white;
+	display: block;
+}
+#header #espace a, #contentBlog a{
+	font-size: 11px;
+	margin-right: 10px;
+}
+#espace{
+	padding-left:20%;
+	margin-bottom: 60px;
+}
+#conseil  .glyphicon{
+	font-size: 40px;
+	color:white;
+}
+
+.rendezvous, .telecharger{
+	background: white;
+	color:black;
+	width:85%;
+	border:none;
+	border-radius: 5px;
+	text-align: left;
+	white-space:normal;
+	
+}
+#footer button{
+	display: flex;
+	width: 100%;
+	color:black;
+	align-items: center;
+}
+#footerContact{
+	display: flex;
+}
+.rendezvous span,#header span .telecharger span{
+	display:block;
+	text-align: left;
+}
 
 
+#conseil, #align{
+	height: 50px;
+	margin-bottom:5px;
+
+}
+
+
+#footer, #header, #header a, #footer a{
+	color:white;
+}
+#footer li{
+	list-style:none;
+}
+
+/* footer */
+#footer{
+	margin-top: 10px;
+}
+
+
+#footerContact .fa{
+	font-size: 30px;
+	padding-top: 8px;
+	margin-right: 4px;
+}
+
+#sociaux .fa{
+	font-size: 15px;
+	color:00adef;
+}
+#footer li a{
+	font-size: 11px;
+}
+#trois li a{
+	line-height: 4;
+	margin-bottom: 40px;
+	text-decoration: none;
+	font-size : 18px;
+}
+
+#trois .glyphicon{
+	color:#00aeef;
+	background:transparent;
+	font-size: 25px;
+	top:6px;
+	margin-right:15px;
+}
+#footerContact .fa, #header .fa{
+	background: transparent;
+	border:none;
+	color:black;
+}
+
+ul{
+	padding-left:0;
+}
+
+#faq, #plan, #condition{
+	padding-top:5px;
+	border-top:3px white dotted;
+}
+#condition, #copiright{
+	color:#c5c7c4;
+}
+
+#line{
+	border-top: 3px solid white;
+}
+
+.ContactCol{
+	font-size:17px;
+}
+
+/* content blog */
+
+#ctnblog{
+	background: #fff;
+	margin-bottom: 5%;
+	padding-bottom:8%;
+	text-decoration: 
+}
+
+
+#actu{
+	margin-top: 30px;
+}
+
+#categorie, #motCle{
+	border-radius: 4px;
+	box-shadow: #969694 3px 4px 4px;
+	margin-top: 20px;
+}
+
+#header, #footer, #ctnblog{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#conseil h2{
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+#sociaux .fa{
+	display:inline-block;
+	color: #00aeef;
+	font-size:30px;
+}
+#sociaux li{
+	padding-right: 15px;
+	display: inline;
+}
 /* inscription */
 
 .inscription .panel-default{
@@ -56,25 +225,26 @@ h5{
 
 
 /* recherche input */
-#search{
+#search input{
 	border: none;
 	background: transparent;
 	color:white;
 	border-bottom: 1px white solid;
 }
-.jumbotron{
-	background: #00AEEF !important;
 
-}
+
 .navbar{
 	border-radius:0px;
 	width:30%;
 	min-width: 450px;
-	height:150px;
+}
+#navbar{
+	padding: 0%;
 }
 .navbar a{
+	font-size: 11px;
 	padding: 0;
-	margin: 5px;
+	margin: 5.3px;
 	color: white;
 }
 
@@ -106,7 +276,7 @@ h5{
 }
 
 #con{
-	color:#1a1a1;
+	color:#1a1a;
 }
 
 .bolo{
@@ -120,12 +290,53 @@ h5{
 	padding-left: 7%;
 	padding-right: 4.5%;
 }
-span{
-	text-align:center;
+#headerRight a{
+	text-align: center;
 }
-.glyphicon{
+#header .contact button{
+	background: white;
+}
+.contact button{
+	border:none;
+	border-radius: 3px;
+	display: flex;
+	width:95%;
+	font-size: 12px;
+	align-items: center; 
+}
+
+
+#ctnblog #conseil, #ctnblog #align, #ctnblog .glyphicon{
+	color:#00405b;
+}
+
+.contactBody .right, .contactBody .left{
+	width:100%;
+	height: 100px;
+	border:1px black solid;
+}
+
+.contactBody{
+	display: flex;
+}
+
+#ctnblog .contact{
+	width: 50%;
+}
+#ctnblog .contact button, #ctnblog .contact span{
+	background: #00405b;
+	color:white;
+}
+.contact span{
+	color:black;
+	text-align:center;
 	display: block;
 }
+
+.contact span.fa{
+	width:20%;
+}
+
 /* button code parrain */
 #code{
 	height: 25px;

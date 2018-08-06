@@ -16,6 +16,7 @@ export default (
 
 <Route exact path="/" component={Connexion} />
 <Route path="/userForm" component={UserForm} />
-
+<Route path="/Inscription" component={Inscription} />
+<Route path="/Blog" component={Blog}/>
 </div>
 );

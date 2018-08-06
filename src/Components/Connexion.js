@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router'
 import Input from './SUBCOMPONENTS/Input';
 import Checkbox from './SUBCOMPONENTS/Checkbox';
+import Button from './SUBCOMPONENTS/Button';
 export default class Connexion extends React.Component {
 
 goAcceuil = event => {
@@ -40,9 +41,7 @@ return (
       </button>
       </div>
       <div class="row">
-      <button type="submit" id="log" className="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-        S inscrire
-      </button>
+      <Button idButton="log" typeButton="submit" className="primary" btncontent="S'inscrire"/>
       </div>
       </div>
       </div>
