@@ -4,6 +4,7 @@ import Contact from './Contact';
 import Content from './ContentBlog';
 import Button from './Button';
 import Offre from './Offrons';
+import Actualite from './Actualite';
 
 export default class ContentApropos extends React.Component{
     render(){
@@ -13,11 +14,11 @@ export default class ContentApropos extends React.Component{
                     <div className="row  apropos">
                             <Contact/>
                     </div>
-                    <div className="row offre">
+                    <div className="row">
                         <Offre id="offre" cntTitle="NOUS VOUS OFFRONS"/>
                     </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-7">
                 <h1>Prépa Pour Tous</h1>
                 <h4>Une prépa accessible partout, pour tous</h4>
                 <p>
@@ -34,13 +35,9 @@ export default class ContentApropos extends React.Component{
                 <h4>"Prépa Pour Tous, pour gagner du temps et réviser efficacement sans se ruiner!"</h4>
 
                 </div>
-                <div className="col actu">
-                    <div>
-                        <h1>ACTUALITÉ</h1>
-
-                        <a href="#">En savoir plus</a>
-                    </div>
-                    <Button typeButton="submit" className="glyphicon glyphicon-arrow-right" btncontent="Toutes nos actualités"/>
+                <div className="col">
+                <Actualite/>
+                <Button typeButton="submit" className="glyphicon glyphicon-arrow-right" btncontent="Toutes nos actualités"/>
                 </div>
             </div>
         );

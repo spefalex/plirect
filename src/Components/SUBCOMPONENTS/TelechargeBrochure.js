@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from './Button';
+
 export default class TelechargeBrochure extends React.Component{
     render(){
         return(
@@ -26,6 +28,7 @@ export default class TelechargeBrochure extends React.Component{
             <label for="message">Votre message</label>
             <textarea id="message"/>
             </div>
+            <Button typeButton="submit" className="fas fa-paper-plane" btncontent="Envoyer"/>
             </form>
             </div>    
         );

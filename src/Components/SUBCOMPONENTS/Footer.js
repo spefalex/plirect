@@ -51,7 +51,7 @@ export default class Footer extends React.Component{
             <div className="col">
               <h2>Suivez-nous sur les résaux sociaux</h2>
                   <ul id="sociaux">
-                    <li><LinkIcon link="#" className="fa fa-facebook"/><LinkIcon link="#" className="fa fa-youtube"/></li>
+                    <li><LinkIcon link="#" className="fab fa-facebook"/><LinkIcon link="#" className="fab fa-youtube"/></li>
                     </ul>
                     <ul id="condition">
                     <li>Condition générales de vente</li>

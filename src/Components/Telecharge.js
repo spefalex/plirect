@@ -15,11 +15,11 @@ export default class Telecharge extends React.Component{
                 <Header/>
                 <div className="row" id="ctnblog">
                     <div className="col">
-                        <Offre/>
+                        <Offre cntTitle="NOUS VOUS OFFRONS"/>
                     </div>
                     <TelechargeBrochure/>
                     <div className="col">
-                       <Decouvrir/>
+                       <Decouvrir title="DÉCOUVRER AUSSI"/>
                        <div className="row">
                         <Parrainer/>
                         </div>

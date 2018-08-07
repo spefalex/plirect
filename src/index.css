@@ -94,9 +94,9 @@ button{
 	margin-right: 4px;
 }
 
-#sociaux .fa{
-	font-size: 15px;
-	color:00adef;
+#sociaux span.fab{
+	font-size: 25px;
+	color:#00adef;
 }
 #footer li a{
 	font-size: 11px;
@@ -154,11 +154,102 @@ ul{
 	margin-top: 30px;
 }
 
-.categorie, .motCle, .offre{
+.categorie, .motCle, .offre, .gagner, .offrons{
 	border-radius: 4px;
-	box-shadow: #969694 3px 4px 4px;
 	margin-top: 20px;
+	padding: 3px 0 3px 0px;
+	word-wrap: break-word;
 }
+.categorie, .motCle{
+	box-shadow: #969694 3px 4px 4px;
+}
+
+.categorie h1, .motCle h1, .offre h1, .gagner h1, .offrons h1, .parrainer h1, .group h1, .actu h1{
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.parrainer{
+	margin-top: 5%;
+}
+.offre h1{
+	padding-top: 2%;
+	color:white;
+	text-align: center;
+}
+
+.offrons h1, .group h1{
+	padding-top: 2%;
+	color: #00405b;
+	text-align: center;
+}
+.offre{
+	background:#00405b;
+}
+.offrons a, .offre a{
+	text-decoration: none;
+	color:white;
+	padding: 0 0 0 4%;
+	display: block;
+	width: 100%;
+	align-items: center;
+}
+.offre i, .offrons i{
+	width: 15%;
+	font-size: 20px;
+	padding: 4px 0 4px 0;
+}
+
+.offre a:hover, .offrons a:hover{
+	text-decoration: none;
+	list-style: none;
+	color:white;
+}
+
+.offre ul li:hover{
+	background: #00425a;
+	color:white;
+	text-decoration: none;
+}
+
+/* photo pas encore eu*/
+
+.photo{
+	margin-left: 5%;
+	width: 90%;
+	height: 50px;
+	background: #a0cbdc;
+}
+.offre ul{
+	background: #00aeef;
+	margin: 0;
+	padding:0 0 0 0;
+	height:100%;
+}
+/* offrons color */
+
+.colorCours{
+	background: #82c003;
+}
+.colorPaces{
+	background: #db3052;
+}
+.colorBAC{
+	background: #fd8900;
+}
+.colorBrevet{
+	background: #00adef;
+}
+/* ******** */
+
+.offre li, .offrons li{
+	list-style: none;
+	width:100%;
+}
+.fas{
+	font-size: 18px;
+}
+.categorie h1
 
 #header, #footer, #ctnblog{
 	padding-left: 10%;
@@ -317,6 +408,7 @@ h5{
 
 .contactBody{
 	display: flex;
+	margin-top: 5%;
 }
 
 #ctnblog .contact{
@@ -651,4 +743,27 @@ button:disabled {
 
 .a{
 	width:90%;
+}
+
+.stat{
+	margin-top: 5%;
+	background: #00405b;
+}
+
+div.aussi{
+	display: flex;
+	align-items: center;
+}
+.aussi i{
+	font-size:30px;
+	margin-right: 10%;
+	color:#00405b;
+}
+
+.aussi{
+	background: #00AEEF;
+	margin: 0 20px 0 0;
+	border-radius: 3px;
+	padding: 3px 7px 3px 0;
+	color:white;
 }

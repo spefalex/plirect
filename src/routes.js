@@ -13,7 +13,7 @@ import Apropos from './Components/Apropos';
 import Telecharge from './Components/Telecharge';
 import Offre from './Components/Offre';
 import Pack from './Components/Pack';
-
+import Accueil from './Components/Accueil';
 
 export default (
  <div>
@@ -26,5 +26,7 @@ export default (
 <Route path="/Contact" component={Telecharge}/>
 <Route path="/Offre" component={Offre}/>
 <Route path="/Pack" component={Pack}/>
+<Route path="/Accueil" component={Accueil}/>
+<Route path="/Telecharge" component={Telecharge}/>
 </div>
 );

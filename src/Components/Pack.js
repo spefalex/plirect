@@ -20,7 +20,7 @@ export default class Pack extends React.Component{
                             <Content/>
                     </div>
                     <div className="col">
-                        <Decouvrir/>
+                        <Decouvrir title="DECOUVRER AUSSI"/>
                     </div>
                     <div className="row contactBody">
                     <div className="col-sm left"></div>
