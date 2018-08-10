@@ -16,32 +16,51 @@ button{
 /* header */
 #header{
 	background: #00AEEF;
+	padding:5px 10% 30px 10%;;
+}
+.logo{
+	width: 97%;
+	height: 80%;
 }
 #header li{
 	list-style: none;
 	text-decoration: none;
 }
 
-#headerRight{
-	margin-bottom:30px;
+.bottomheader, .topheader{
+	width: 100%;
 }
+
+
 #header #espace .glyphicon, #contentBlog .glyphicon{
 	font-size: 15px;
 	color:white;
 	display: block;
 }
-#header #espace a, #contentBlog a{
+
+#header #contentBlog a{
 	font-size: 11px;
 	margin-right: 10px;
 }
-#espace{
-	padding-left:20%;
-	margin-bottom: 60px;
+
+
+#espace li{
+	margin-left: 3px;
 }
+#espace a{
+	font-size: 11px;
+	text-align:center;
+	margin-left: 3px;
+}
+#espace{
+	display: flex;
+	margin-left:10px;
+}
+
 #conseil  .glyphicon{
-	font-size: 40px;
 	color:white;
 }
+
 
 .rendezvous, .telecharger{
 	background: white;
@@ -53,10 +72,19 @@ button{
 	white-space:normal;
 	
 }
+
+.blogearphone{
+	display: flex;
+	align-items: center;
+}
 #footer button{
 	display: flex;
 	width: 100%;
 	color:black;
+	background: white;
+	border:none;
+	border-radius: 3px;
+	margin-left: 3px;
 	align-items: center;
 }
 #footerContact{
@@ -67,12 +95,6 @@ button{
 	text-align: left;
 }
 
-
-#conseil, #align{
-	height: 50px;
-	margin-bottom:5px;
-
-}
 
 
 #footer, #header, #header a, #footer a{
@@ -86,16 +108,25 @@ button{
 #footer{
 	margin-top: 10px;
 }
-
+.logoFooter{
+	width: 95%;
+	height: 85%;
+}
+#footer h2{
+	max-width: 100%;;
+}
+#footer h1{
+	font-size: 14px;
+	font-weight: bold;
+}
 
 #footerContact .fa{
-	font-size: 30px;
+	font-size: 20px;
 	padding-top: 8px;
 	margin-right: 4px;
 }
 
-#sociaux span.fab{
-	font-size: 25px;
+#sociaux .icon{
 	color:#00adef;
 }
 #footer li a{
@@ -115,7 +146,7 @@ button{
 	top:6px;
 	margin-right:15px;
 }
-#footerContact .fa, #header .fa{
+#footerContact .fa{
 	background: transparent;
 	border:none;
 	color:black;
@@ -146,15 +177,25 @@ ul{
 #ctnblog{
 	background: #fff;
 	margin-bottom: 5%;
-	padding-bottom:8%;
+	padding-bottom:3px;
 }
 
 
 #actu{
 	margin-top: 30px;
 }
+.contactMargin, .blogMargin, .aproposMargin{
+	padding: 0 8% 0 8%;
+}
+row.actu{
+	padding-top:10px;
+}
 
-.categorie, .motCle, .offre, .gagner, .offrons{
+.sary{
+	width: 100%;
+	height: 100%;
+}
+.categorie, .motCle, .offre, .gagner, .offrons, .actu{
 	border-radius: 4px;
 	margin-top: 20px;
 	padding: 3px 0 3px 0px;
@@ -164,7 +205,7 @@ ul{
 	box-shadow: #969694 3px 4px 4px;
 }
 
-.categorie h1, .motCle h1, .offre h1, .gagner h1, .offrons h1, .parrainer h1, .group h1, .actu h1{
+.categorie h1, .motCle h1, .offre h1, .gagner h1, .offrons h1, .parrainer h1, .group h1, .actu h1, .visio h1, .photoPersonne h1{
 	font-size: 14px;
 	font-weight: 900;
 }
@@ -172,7 +213,7 @@ ul{
 .parrainer{
 	margin-top: 5%;
 }
-.offre h1{
+.offre h1, .visio h1{
 	padding-top: 2%;
 	color:white;
 	text-align: center;
@@ -215,10 +256,9 @@ ul{
 /* photo pas encore eu*/
 
 .photo{
-	margin-left: 5%;
-	width: 90%;
-	height: 50px;
-	background: #a0cbdc;
+	width: 100%;
+	height: 100px;
+	border-radius: 2px;
 }
 .offre ul{
 	background: #00aeef;
@@ -251,7 +291,7 @@ ul{
 }
 .categorie h1
 
-#header, #footer, #ctnblog{
+#header, #footer{
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -395,9 +435,17 @@ h5{
 	align-items: center; 
 }
 
+#conseil .col{
+	padding:0;
+}
+
 
 #ctnblog #conseil, #ctnblog #align, #ctnblog .glyphicon{
 	color:#00405b;
+}
+
+#align p{
+	margin:0;
 }
 
 .contactBody .right, .contactBody .left{
@@ -414,13 +462,35 @@ h5{
 #ctnblog .contact{
 	width: 450px;
 }
+
+.titre{
+	color: #00aeef;
+}
 #ctnblog .contact button, #ctnblog .contact span{
 	background: #00405b;
 	color:white;
 }
 
-.contact span{
-	color:black;
+.row.ctnPart1, .row.temoin{
+	margin: 0 8% 0 8%;
+}
+
+.row.temoin{
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+.row.ligne{
+	width: 100%;
+	height: 4px;
+	border-bottom: 3px solid #00AEEF;
+	margin-top: 5%;
+}
+hr{
+	font-size: 3px;
+}
+
+.contact span, .contact .fa{
+	color: #00405b;
 	text-align:center;
 	display: block;
 }
@@ -638,6 +708,10 @@ button:disabled {
 	color: white;
 }
 
+button{
+	padding: 3px;
+}
+
 /* ----------------------------
 	NotFound
 ---------------------------- */
@@ -653,9 +727,11 @@ button:disabled {
 
 
 .apropos .contact{
-	width:20%;
 	display: block;
+	word-wrap: break-word;
 }
+
+
 
 .glyphicon-arrow-right{
 	border-radius:50px;
@@ -664,27 +740,52 @@ button:disabled {
 }
 
 .col-sm.contOffr{
-	width: 27%;
+	width: 200px;
+}
+.marginlist{
+	margin-left: 10%;
 }
 
 #apropos{
 	display:flex;
-	margin-top: 5%;
 }
 
 .actu{
 	border-radius:3px;
 	background: #00aeef;
+	padding: 2px 4px 2px 0;
 }
 .actu h1{
-	color:white;
+	color:white !important;
 }
 
-.actu button{
+.actu button, .parrainer button, .headerMiddleBottom button{
 	background: #00405b;
 	border:none;
 	color:white;
 	border-radius:3px;
+	height: 40px;
+	padding-right: 12px;
+}
+.actu button img, .parrainer button img, .visio button img, .headerMiddleBottom img{
+	margin-right: 5px;
+}
+
+.headerMiddleBottom{
+	position: relative;
+}
+.bottomPosition{
+	position: absolute;
+	bottom: 0;
+}
+
+.visio button{
+	background: #00aeef;
+	color: white;
+	border:none;
+	border-radius: 3px;
+	height: 40px;
+	padding-right: 12px;
 }
 
 .offre{
@@ -704,13 +805,54 @@ button:disabled {
 	margin-bottom: 5px;
 }
 
+.group button{
+	background: #00405b;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	font-size: 13px;
+}
+.group .fas{
+	margin-right: 7px;
+}
+.group span{
+	vertical-align:middle;
+}
+
 .group{
-	margin-left: 10%;
-	margin-right: 10%;
+	margin: 0 6% 0 6%;
 	
 }
 #ctnblog{
 	padding-top: 5%;
+}
+#ctnblog h1{
+	color:#00AEEF;
+	font-weight: bold;
+}
+
+.consRow1{
+	display: flex;
+	align-items: center;
+}
+
+.contact button{
+	width: 100%;
+}
+.stat button{
+	border-radius: 3px;
+}
+
+.contact .top{
+	width:250px;
+	height: 180px;
+}
+.glyphicon-earphone{
+	font-size: 30px;
+}
+
+#footer .glyphicon-earphone{
+	color: white;
 }
 
 .color1{
@@ -727,16 +869,17 @@ button:disabled {
 	width: 100%;
 	border-spacing: 4px;
 	font-size: 12px;
+	color:#00425a;
 }
 
 .service td{
 	display: flex;
 }
 
-.service .glyphicon{
-	color: white !important;
+.service .fas{
+	background: transparent;
 	border-radius:50px;
-	background: #00405b;
+	color: #00405b;
 	padding: 1%;
 
 }
@@ -766,4 +909,99 @@ div.aussi{
 	border-radius: 3px;
 	padding: 3px 7px 3px 0;
 	color:white;
+}
+
+.visio p, .stat p{
+	color:white;
+}
+.visio{
+	background: #00405b;
+	border-radius: 3px;
+	padding:5px 10% 7px 3px;
+}
+
+/* stat */
+.row.stat{
+	padding: 2% 30% 2% 30%;
+}
+
+.stat span{
+	color: white;
+}
+
+span.heurePourc{
+	font-size:40px;
+}
+.alignHP{
+	display: flex;
+	align-items: center;
+}
+
+.stat button{
+	background: #00aeef;
+	border:none;
+}
+
+.temoin{
+	margin-top: 3%;
+}
+
+.photoPersonne{
+	display: flex;
+	align-items: center;
+}
+
+.temoin col{
+	margin: 0;
+}
+
+img.icon, img.iconDec{
+	width:40px;
+	height: 40px;
+}
+
+#conseil, #align{
+	height: 50px;
+	margin-bottom:5px;
+
+}
+
+
+.contact button{
+	width:90%;
+}
+
+#apropos button{
+	display: flex;
+	align-items: center;
+}
+
+#apropos{
+	margin: 0;
+}
+#apropos h1{
+	color: white;
+}
+.buttonIcon{
+	width: 20px;
+	height:20px;
+}
+
+.logoTaux{
+	width: 140px;
+	height:80px;
+	max-width:100%;
+}
+.visioIcon{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+    width: 50%;
+}
+img.visioIcon{
+	width: 40px;
+}
+
+img{
+	max-height:100%;
 }

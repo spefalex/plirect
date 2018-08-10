@@ -11,12 +11,23 @@ export default class Pack extends React.Component{
     render(){
         return(
             <div>
-                    <Header/>
-                    <div className="row" id="ctnblog">
-                    <div className="col">
-                            <Offre/>
+                    <Header>
+                    <div className="row bottomheader">
+                                <div className="col-auto">
+                                <h1>PACK PREMIUM</h1>
+                                </div>
+                                <div className="col headerMiddleBottom">
+                                </div>
+                    <div className="col-6" id="headerRight">
+                      <Contact/>
                     </div>
+                </div>
+                    </Header>
+                    <div className="row packMargin" id="ctnblog">
                     <div className="col">
+                            <Offre cntTitle="NOUS VOUS OFFRONS"/>
+                    </div>
+                    <div className="col-7">
                             <Content/>
                     </div>
                     <div className="col">

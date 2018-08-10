@@ -11,8 +11,19 @@ export default class Blog extends React.Component{
   render(){
     return (
       <div>
-      <Header/>
-     <div className="row" id="ctnblog">
+      <Header>
+      <div className="row bottomheader">
+                                <div className="col-auto">
+                                <h1>BLOG</h1>
+                                </div>
+                                <div className="col headerMiddleBottom">
+                    </div>
+                    <div className="col-6" id="headerRight">
+                      <Contact/>
+                    </div>
+                </div>
+      </Header>
+     <div className="row blogMargin" id="ctnblog">
             <div className="row">
                 <div id="actu" className="col-lg">
                   <h1>Actualité</h1>

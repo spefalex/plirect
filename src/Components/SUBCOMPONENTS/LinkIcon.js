@@ -5,7 +5,7 @@ export default class LinkIcon extends React.Component{
         return(
 
         <li className="ContactCol" >
-            <a href={this.props.link}><span className={this.props.className}></span> {this.props.linkname}</a>
+            <a href={this.props.link}><span className={this.props.className}>{this.props.children}</span> {this.props.linkname}</a>
         </li>
         
         );

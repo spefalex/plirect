@@ -11,48 +11,48 @@ export default class PackContent extends React.Component{
 
                 <table className="service">
                 <tr>
-                        <td className="color1"><span className="a">Pré-rentrée</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Pré-rentrée</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Génératrice QCM</span> <span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Génératrice QCM</span> <span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color1"><span className="a">Contrôle continu</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Contrôle continu</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a" >Concours blanc</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a" >Concours blanc</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color1"><span className="a">Cours et fiches de cours</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Cours et fiches de cours</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Forum</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Forum</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color1"><span className="a">Tableau de bord</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Tableau de bord</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Suivi de progression</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Suivi de progression</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color1"><span className="a">Accompagnement</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Accompagnement</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Espace Parents</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Espace Parents</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color1"><span className="a">Cours visio Physique I & II</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color1"><span className="a">Cours visio Physique I & II</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Cours visio Maths</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Cours visio Maths</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                     <tr>
                         <td className="color1"><span className="a">Cours visio Chimie I</span>
-                            <span className="glyphicon glyphicon-ok"></span>
+                            <span className="fas fa-check-circle"></span>
                         </td>
                     </tr>
                     <tr>
-                        <td className="color2"><span className="a">Cours visio à la demande</span><span className="glyphicon glyphicon-ok"></span></td>
+                        <td className="color2"><span className="a">Cours visio à la demande</span><span className="fas fa-check-circle"></span></td>
                     </tr>
                 </table>
             </div>

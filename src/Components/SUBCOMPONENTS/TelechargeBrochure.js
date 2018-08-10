@@ -28,7 +28,7 @@ export default class TelechargeBrochure extends React.Component{
             <label for="message">Votre message</label>
             <textarea id="message"/>
             </div>
-            <Button typeButton="submit" className="fas fa-paper-plane" btncontent="Envoyer"/>
+            <Button  typeButton="submit" className="fas fa-paper-plane" btncontent="Envoyer"/>
             </form>
             </div>    
         );

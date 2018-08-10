@@ -1,46 +1,38 @@
 import React from 'react';
 
-import Glyphicon from './Glyphicon';
 import Recherche from './Recherche';
-import LinkMenu from './LinkMenu';
-import Button from './Button';
-import Paragraph from './Paragraph';
 import Contact from './Contact';
 import LinkIcon from './LinkIcon';
+import Menu from './Menu';
+import ParentIcon from './../../icon/parent-login-01.png';
+import EtudiantIcon from './../../icon/login-01.png';
+import InscriptionIcon from './../../icon/inscription-01.png';
+import PPTLogo from './../../icon/LogoPPT_03.png';
 
 export default class Header extends React.Component{
   render(){
     return(
       <div class="row" id="header">
-        <div className="row">
-        <div className="col-sm-auto">
-       <h2>PREPA POUR</h2><h1>TOUS</h1>
+        <div className="row topheader">
+        <div className="col-3">
+        <img className="logo" src={PPTLogo} />
+        </div>
+            <Menu/>
+        <div className="col" id="espace">
+            <LinkIcon img={EtudiantIcon} link="/" linkname="ESPACE ÉTUDIANT">
+                    <img className="icon" src={EtudiantIcon}/>
+            </LinkIcon>
+            <LinkIcon link="/" linkname="ESPACE PARENT">
+                    <img className="icon" src={ParentIcon} />
+            </LinkIcon>
+            <LinkIcon link="inscription" linkname="S'INSCRIRE">
+                    <img className="icon" src={InscriptionIcon} />
+            </LinkIcon>
+        </div>
+        </div>
+          {this.props.children}
        </div>
-       <div className="col">
-       <nav className="navbar">
-       <div class="row" id="search">
-           <Recherche id="search" placeholder="Votre recherche ici..." />
-     	</div>
-       <div class="collapse navbar-collapse" id="navbar">
-        <LinkMenu routeLink="Apropos"  menuItem="A PROPOS"/>
-        <LinkMenu menuItem="PREPA ET APPUI"/>
-        <LinkMenu menuItem="METHODE"/>
-        <LinkMenu routeLink="Pack" menuItem="NOS PACKS"/>
-        <LinkMenu menuItem="ACTUALITES"/>
-        <LinkMenu routeLink="Contact" menuItem="CONTACT"/>
-       </div>
-       </nav>
-       </div>
-       <div className="col" id="headerRight">
-          <div className="row"  id="espace">
-            <LinkIcon className="glyphicon glyphicon-log-in" link="#" linkname="ESPACE ÉTUDIANT"/>
-            <LinkIcon className="glyphicon glyphicon-user" link="#" linkname="ESPACE PARENT"/>
-            <LinkIcon className="glyphicon glyphicon-tasks" link="inscription" linkname="S'INSCRIRE"/>
-          </div>
-          <Contact/>
-       </div>
-       </div>
-     </div>
+     
 );
   }
 }
